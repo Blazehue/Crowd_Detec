@@ -1,9 +1,35 @@
-# AI Crowd Detection Model - MVP
+# AI Crowd Detection Model - MVP 🚀
+
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![YOLOv8](https://img.shields.io/badge/YOLOv8-Detection-orange?style=for-the-badge)](https://github.com/ultralytics/ultralytics)
+[![OpenCV](https://img.shields.io/badge/OpenCV-Vision-green?style=for-the-badge&logo=opencv&logoColor=white)](https://opencv.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-red?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
 
 A standalone AI model for real-time crowd detection and counting specifically optimized for festival environments. This MVP focuses on computer vision pipeline with accurate person detection, crowd density estimation, and basic alerting capabilities.
 
+## 📋 Table of Contents
+
+- [Features](#-features)
+- [Technical Stack](#-technical-stack)
+- [Installation](#-installation)
+- [Quick Start](#-quick-start)
+- [System Architecture](#-system-architecture)
+- [Output Formats](#-output-formats)
+- [Testing and Validation](#-testing-and-validation)
+- [Configuration Options](#-configuration-options)
+- [Performance Targets](#-performance-targets)
+- [Troubleshooting](#-troubleshooting)
+- [API Reference](#-api-reference)
+- [Data Schema](#-data-schema)
+- [Security Considerations](#-security-considerations)
+- [Future Enhancements](#-future-enhancements)
+- [License](#-license)
+- [Contributing](#-contributing)
+- [Support](#-support)
+
 ## 🎯 Features
 
+### Core Functionality
 - **Real-time Person Detection**: YOLOv8-based person detection with >85% accuracy
 - **Crowd Density Analysis**: Advanced spatial analysis and density calculation
 - **Smart Alerting**: Configurable threshold-based and anomaly-based alerts
@@ -12,13 +38,28 @@ A standalone AI model for real-time crowd detection and counting specifically op
 - **Comprehensive Logging**: CSV/JSON data logging with optional image capture
 - **Modular Architecture**: Easy to extend and integrate with other systems
 
+### Technical Features
+- **Real-time Display**: Live video with bounding boxes around detected persons
+- **Person Count Overlay**: Real-time person count display
+- **Crowd Density Visualization**: Visual representation of crowd density
+- **Alert Status Indicators**: Visual alert indicators
+- **Performance Metrics**: FPS and processing time metrics
+
 ## 🔧 Technical Stack
 
+### Core Technologies
 - **AI Framework**: YOLOv8 (Ultralytics)
 - **Computer Vision**: OpenCV
 - **Deep Learning**: PyTorch
 - **Language**: Python 3.8+
 - **Hardware**: NVIDIA GPU (recommended) with CPU fallback
+
+### Dependencies
+- ultralytics>=8.0.0
+- opencv-python>=4.5.0
+- torch>=1.7.0
+- numpy>=1.19.0
+- PyYAML>=5.3.0
 
 ## 📦 Installation
 
@@ -95,19 +136,19 @@ video:
 
 ## 📊 System Architecture
 
-```
+```text
 Video Input → Frame Preprocessing → YOLOv8 Detection → 
 Crowd Analysis → Alert Generation → Output/Logging
 ```
 
 ### Core Components
 
-1. **`video_processor.py`**: Video input handling and frame management
-2. **`model_utils.py`**: YOLOv8 model loading and person detection
-3. **`crowd_analyzer.py`**: Crowd density calculation and spatial analysis
-4. **`alert_manager.py`**: Alert generation and notification system
-5. **`crowd_detector.py`**: Main integration script
-6. **`config.py`**: Configuration management
+1. **[video_processor.py](file:///C:/Users/pandr/OneDrive/Desktop/UPDATEGIT/Crowd_Detec/video_processor.py)**: Video input handling and frame management
+2. **[model_utils.py](file:///C:/Users/pandr/OneDrive/Desktop/UPDATEGIT/Crowd_Detec/model_utils.py)**: YOLOv8 model loading and person detection
+3. **[crowd_analyzer.py](file:///C:/Users/pandr/OneDrive/Desktop/UPDATEGIT/Crowd_Detec/crowd_analyzer.py)**: Crowd density calculation and spatial analysis
+4. **[alert_manager.py](file:///C:/Users/pandr/OneDrive/Desktop/UPDATEGIT/Crowd_Detec/alert_manager.py)**: Alert generation and notification system
+5. **[crowd_detector.py](file:///C:/Users/pandr/OneDrive/Desktop/UPDATEGIT/Crowd_Detec/crowd_detector.py)**: Main integration script
+6. **[config.py](file:///C:/Users/pandr/OneDrive/Desktop/UPDATEGIT/Crowd_Detec/config.py)**: Configuration management
 
 ## 🔍 Output Formats
 
@@ -336,4 +377,7 @@ For technical support and questions:
 
 ---
 
-**Built with ❤️ for festival safety and crowd management**
+<p align="center">
+  Built with ❤️ for festival safety and crowd management<br>
+  Made by <a href="https://github.com/Blazehue">Blazehue</a>
+</p>
