@@ -1,4 +1,4 @@
-# AI Crowd Detection Model - MVP 
+# AI Crowd Detection Model - MVP.
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-Detection-orange?style=for-the-badge)](https://github.com/ultralytics/ultralytics)
